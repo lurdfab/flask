@@ -1,0 +1,145 @@
+{% extends 'base.html' %}
+
+{% block title %}Blog{% endblock %}
+
+{% block header %}
+<div class="container">
+    <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+        <a href="{{ url_for ('index') }}" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
+            <img src="{{ url_for ('static', filename='img/logo.jpg') }}" height="70px" alt="">
+            <h5>Legit News</h5>
+        </a>
+
+        <div class="col-md-3 text-end">
+          <button type="button" class="btn btn-outline-primary me-2"><a href="{{ url_for ('login') }}">Logout</a></button>
+        </div>
+        
+    </header>
+</div>
+{% endblock %}
+
+<!-- signup form  -->
+{% block content %}
+<main class="container">
+  <h3>Some Landmarks in lagos State</h3>
+  <br>
+  <div class="row" data-masonry='{"percentPosition": true }'>
+    <div class="col-sm-6 col-lg-4 mb-4">
+      <div class="card first">
+        <img src=" {{ url_for ('static', filename='img/ikoyi bridge.jpg') }}" alt="">
+        <div class="card-body">
+          <h5 class="card-title">Lekki / Ikoyi Link bridge</h5>
+          <p class="card-text">The Lekki-Ikoyi Link Bridge, is a 1.36 km (0.84 mile) cable-stayed bridge in Lagos State. It links the Phase 1 area of Lekki, 
+          with Ikoyi district of Lagos. The bridge was commissioned on 29 May 2013 by the Governor of Lagos State, Babatunde Raji Fashola.
+          The bridge is the first cable-stayed bridge to be built in Nigeria and was constructed by Julius Berger Nigeria. The bridge has a
+          9-metre headroom above water level in order to allow for the flow of maritime traffic.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6 col-lg-4 mb-4">
+      <div class="card p-3 second">
+        <img src="{{ url_for ('static', filename='img/sketch.jpg') }}" alt="">
+        <figure class="p-3 mb-0">
+          <blockquote class="blockquote">
+            <p>"If you no wise for LAGOS, you no fit wise again"</p>
+          </blockquote>
+          <figcaption class="blockquote-footer mb-0 text-muted">
+            Anonymous 
+          </figcaption>
+        </figure>
+      </div>
+      <br>
+      <div class="card p-3 text-end third">
+        <figure class="mb-0">
+          <blockquote class="blockquote">
+            <p>"A commercial city blessed both economically and spiritually"</p>
+          </blockquote>
+          <figcaption class="blockquote-footer mb-0 text-muted">
+            Anonymous 
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+    <div class="col-sm-6 col-lg-4 mb-4">
+      <div class="card fourth">
+        <img src="{{ url_for ('static', filename='img/eko 2.jpg') }}" alt="">
+        <div class="card-body">
+          <h5 class="card-title">Lagos Island (Ìsàlẹ̀ Èkó)</h5>
+          <p class="card-text">Lagos Island (Ìsàlẹ̀ Èkó) is the principal and central local government area (LGA) in Lagos, 
+          it was the capital of Lagos State until 1957. It is part of the Lagos Division. As of the preliminary 2006 Nigerian census,
+          the LGA had a population of 209,437 in an area of 8.7 km2. The LGA only covers the western half of Lagos Island; 
+          the eastern half is simply referred to as Lagos Island East LCDA.</p>
+         
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6 col-lg-4 mb-4">
+      <div class="card fifth">
+        <img src="{{ url_for ('static', filename='img/lekki sea port.jpg') }}" alt="">
+        <div class="card-body">
+          <h5 class="card-title">Lekki Deep Sea Port</h5>
+          <p class="card-text">It is the largest seaport of Nigeria and one of the biggest in West Africa. Lekki port is to be expanded to have a capacity of handling around 6 million TEUs of containers and a significant volume of liquid and dry bulk uncontainerized cargoes. The port is to be equipped with ships able to transport over 14,500 containers.
+            The port is being developed in phases. Its phase one, be operational in 2018, chiefly comprises it three container berths equipped to handle more than 1.8 million TEUs — one berth for dry bulk goods and two berths for liquid cargo.
+            The port is financed by private investors and a consortium of banks who have funded the project with $1.5 billion as of March 2021. The seaport is to occupy up to 90 hectares of land. It is expected to be completed in 2023 and operations to commence in the first half.
+            On October, 31st, 2022, the port has been handed over to the owners. Commissioning will start "in the next month". Lagos State governor Sanwo-Olu promised on this occasion to expand the roads to the port to 6 lane highways.
+            On 22 January 2023, a few hours before the official inauguration by President Buhari, the first commercial ship, the container freighter CMA CGM MOZART, docked at the port.</p>
+         
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6 col-lg-4 mb-4">
+      <div class="card text-center sixth">
+        <img src="{{ url_for ('static', filename='img/toll gate.jpg') }}" alt="">
+        <div class="card-body">
+          <h5 class="card-title">Lekki Tollgate</h5>
+          <p class="card-text">On the night of 20 October 2020, at about 6:50 p.m., members of the Nigerian Army opened fire on unarmed End SARS protesters at the Lekki toll gate in Lagos State, 
+          Nigeria. Amnesty International stated that at least 12 protesters were killed during the shooting. A day after the incident, on 21 October, the governor of Lagos State, 
+          Babajide Sanwo-olu, initially denied reports of any loss of lives, but later admitted in an interview with a CNN journalist that "only two persons were killed". 
+          The Nigerian Army initially denied involvement in the shooting, but later stated that it had deployed soldiers to the toll gate on the orders of the governor of Lagos State.
+          A month after the shooting, following a CNN documentary on the shooting, the Nigerian Army admitted to the Lagos Judiciary panel of inquiry into the shooting that it had deployed
+          its personnel to the toll gate with both live and blank bullets.</p>
+          
+        </div>
+      </div>
+      <br>
+      <div class="card seventh">
+        <img src="{{ url_for ('static', filename='img/blue rail.png') }}" alt="">
+        <div class="card-body">
+          <h5 class="card-title">The Blue Rail</h5>
+          <p class="card-text"> Lagos Rail Mass Transit is a rapid transit system being developed and under construction in Lagos State. The rail system is being managed by the Lagos Metropolitan Area Transport Authority (LAMATA). 
+            The railway equipment including electric power, signals, rolling stock, and fare collection equipment will be provided by the private sector under a concession contract. LAMATA is responsible for policy direction, regulation, 
+            and infrastructure for the network. The first section of the network, Phase I of the Blue Line, was originally planned to be completed in 2011, though the construction has suffered many delays caused by shortage of funds and change of government.
+             In February 2021, the Lagos State Government announced that the Blue and Red Lines would be open by December 2022. but operation of Blue Line began in January 24, 2023.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6 col-lg-4 mb-4">
+      <div class="card text-center eight">
+        <img src="{{ url_for ('static', filename='img/eko atlantic.jpg') }}" alt="">
+        <div class="card-body">
+          <h5 class="card-title">Èkó Atlantic</h5>
+          <p class="card-text">Eko Atlantic, officially Nigeria International Commerce city, also known as Eko Atlantic City, or the initials E.A.C. and E.A., is a planned city of Lagos State, Nigeria, 
+            being constructed on land reclaimed from the Atlantic Ocean. Upon completion, the new peninsula is anticipating at least 250,000 residents and a daily flow of 150,000 commuters. 
+            The development is also designed to help in stopping the erosion of Lagos city's coastline. The city adjoins Victoria Island district of Lagos city, and the Phase 1 area of Lekki to the north, 
+            while the entire Western, eastern and southern borders is a coastline. Eko Atlantic is expected to rise as the next generation of property on the African continent; having a total of 10 districts, 
+            spread across a land area of approximately 10 square kilometres (3.9 sq mi), the city will satisfy needs for financial, commercial, residential and tourist accommodations.</p>
+          
+        </div>
+      </div>
+    </div>
+
+  </div>
+  
+  
+
+</main>
+{% endblock content %}
+
+
+<!-- signup form done  -->
+
+
+
+
+
+{% block footer %}{% include 'footer.html' %}{% endblock %}

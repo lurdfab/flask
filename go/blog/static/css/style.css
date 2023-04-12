@@ -1,0 +1,182 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body {
+    background: rgba(241, 235, 235, 0.281) !important;
+}
+
+/* header  */
+.d-flex a h5 {
+    font-family: 'Luckiest Guy';
+    color: orange;
+    font-size: 30px;
+    margin-top: 20px; 
+    margin-left: 25px;
+}
+.d-flex a h5:hover {
+    color: black;
+}
+.d-flex .nav li a {
+    margin-left: 50px;
+    color: black !important;
+}
+.d-flex .nav li a:hover {
+    color: orange !important;
+}
+.d-flex .text-end .btn {
+    background-color: black;
+    border: none;
+}
+.d-flex .text-end .btn:hover {
+    background-color: orange;
+}
+.d-flex .text-end .btn a {
+    color: orange;
+    text-decoration: none;
+}
+.d-flex .btn  a:hover {
+    color: green;
+}
+
+/* header done  */
+
+/* carousel  */
+#carouselExampleFade button i {
+    font-size: 40px;
+}
+/* carousel done  */
+
+/* banner  */
+.get{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-items: center;
+}
+
+.get::before{
+    content: "";
+    position: absolute;
+    background-image:url(../img/danfo.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    top: 0%;
+    right: 0%;
+    left: 0%;
+    bottom: 0%;
+    opacity: 0.2;
+}
+.get h5{
+    font-family: 'Luckiest Guy';
+    font-size: 130px;
+    color: black;
+}
+.get h5 span{
+    color: red;
+}
+.get h4 {
+    font-family: 'Luckiest Guy';
+    font-size: 40px;
+}
+/* banner done  */
+
+/* contents  */
+
+/* contents done  */
+
+/* footer  */
+.container .icons li a{
+    color: black;
+    font-size: 20px;
+}
+
+.container .icons li a:hover{
+    color: orange;
+}
+/* footer done  */
+
+/* signup form  */
+
+/* signup form done  */
+
+/* login form  */
+
+/* login form done  */
+
+/* contact us  */
+.form-signup {
+    margin: 0 auto;
+    max-width: 800px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.form-signup .but input {
+    background-color: black;
+    border: none;
+    color: orange;
+}
+.form-signup .but input:hover{
+    background-color: orange;
+    color: green;
+}
+/* contact us done  */
+
+/* blog  */
+.container h3 {
+    text-align: center;
+    margin-top: 30px;
+}
+.first {
+    transition: 2s;
+}
+.first:hover {
+    transform: scaleX(1.2);
+}
+
+.second {
+    transition: 2s;
+}
+.second:hover {
+    transform: scaleY(1.2);
+}
+
+.third {
+    transition: 2s;
+}
+.third:hover {
+    transform: scaleY(1.2);
+}
+.fourth {
+    transition: 2s;
+}
+.fourth:hover {
+    transform: scaleX(1.2);
+}
+.fifth {
+    transition: 2s;
+}
+.fifth:hover {
+    transform: scaleX(1.2);
+}
+.sixth {
+    transition: 2s;
+}
+.sixth:hover {
+    transform: scaleY(1.2);
+}
+.seventh {
+    transition: 2s;
+}
+.seventh:hover {
+    transform: scaleX(1.2);
+}
+.eight {
+    transition: 2s;
+}
+.eight:hover {
+    transform: scaleX(1.2);
+}
+/* blog done  */

@@ -1,0 +1,61 @@
+{% extends 'base.html' %}
+{% import 'bootstrap/wtf.html' as wtf %}
+
+{% block title %}Contact Us{% endblock %}
+ 
+
+{% block header %}
+<div class="container">
+    <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+        <a href="{{ url_for ('index') }}" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
+            <img src="{{ url_for ('static', filename='img/logo.jpg') }}" height="70px" alt="">
+            <h5>Legit News</h5>
+        </a>
+    </header>
+</div>
+{% endblock %}
+<!-- header done  -->
+
+<!-- contact us  -->
+{% block content%}
+<div class="container">
+  <form class="form-signup" method="POST" action="/contactus"> 
+    <h1 class="h3 mb-3 fw-normal">Fill in the Fields</h1>
+    {{ form.hidden_tag() }}
+    <div class="row">
+      <div class="col-md-6">
+        <div class="form-floating">
+          {{ wtf.form_field(form.first_name) }}
+        </div>
+        <br>
+      </div>
+      <div class="col-md-6">
+        <div class="form-floating">
+          {{ wtf.form_field(form.last_name) }}
+        </div>
+        <br>
+      </div>
+      <div class="form-group">
+        <div class="form-floating">
+         {{ wtf.form_field(form.email) }}
+        </div>
+        <br>
+      </div>
+      <div class="form-group">
+        <div class="form-floating textarea">
+          {{ wtf.form_field(form.comments) }}
+        </div>
+        <br>
+      </div>
+      <div class="but">
+        <input type="submit" class="btn btn-secondary btn-lg value="submit">
+      </div>
+    </div>    
+  </form>
+</div>
+{% endblock %}
+<!-- contact us done  -->
+
+<!-- footer  -->
+{% block footer %}{% include 'footer.html' %}{% endblock %}
+<!-- footer done  --> 
